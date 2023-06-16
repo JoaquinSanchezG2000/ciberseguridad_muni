@@ -1,0 +1,524 @@
+*{
+  color: #999;
+}
+
+
+/* Estilos generales */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", Arial, sans-serif;
+
+  margin: 0;
+  background-color: #f2f2f2;
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Estilos del encabezado */
+
+.encabezado {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #3e3838;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.encabezado h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Estilos de la navegación */
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+.logo-nav {
+  height: 4rem;
+  width: 6rem;
+  margin: 0;
+  padding: 0;
+}
+.icon-menu-hamburguesa{
+display: none;
+  
+}
+.menu{
+  display: none;
+}
+.modal-menu{
+  display: none;
+}
+
+.lista-menu {
+  list-style-type: none;
+  margin-right: 2rem;
+  font-size: 18px;
+}
+
+.lista-menu li {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.lista-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.lista-menu li a:hover {
+  color: #ff8000;
+}
+
+/* Estilos de las secciones */
+.seccion {
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inicio {
+  margin-top: 2rem;
+}
+.contenedor {
+  width: 80%;
+}
+
+.titulo-principal {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: #ff8000;
+}
+
+.descripcion {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.boton-cta {
+  display: inline-block;
+  background-color: #ff8000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-cta:hover {
+  background-color: #e56e00;
+}
+
+/* Estilos de los servicios */
+.titulo-seccion {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.lista-servicios {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.servicio {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  background-color: #ff8000;
+}
+
+/* Estilos de la galería */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  height: 12rem;
+}
+
+.imagen-proyecto {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen-proyecto:hover {
+  transform: scale(1.1);
+  border: solid 3px #ff8000;
+}
+
+/* Estilos del formulario de contacto */
+.formulario-contacto {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.campo-nombre,
+.campo-email,
+.campo-mensaje {
+  margin-bottom: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.campo-nombre::placeholder,
+.campo-email::placeholder,
+.campo-mensaje::placeholder {
+  color: #999;
+}
+
+.boton-enviar {
+  background-color: #ff8000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #e56e00;
+}
+
+.boton-enviar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.boton-enviar:disabled:hover {
+  background-color: #ccc;
+}
+
+/* ciberseguridad */
+#ciber-seguridad {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+#ciber-seguridad div {
+  margin: 1rem;
+  width: 80%;
+}
+#ciber-seguridad article {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+
+  margin: 2rem 0;
+}
+#ciber-seguridad h2 {
+  color: #ff8000;
+  font-size: 36px;
+  margin: 2rem;
+}
+#ciber-seguridad h3{
+  color: dimgrey;
+}
+#ciber-seguridad p {
+  text-align: start;
+}
+#ciber-seguridad article div {
+  padding: 1rem;
+}
+#ciber-seguridad article img {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 2%;
+}
+
+.ciber-seguridad-practicas {
+  margin: 4rem;
+}
+.ciber-seguridad-buenas-practicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* contacto */
+#contacto {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+#contacto form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contacto h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contacto .campo {
+  margin-bottom: 20px;
+}
+
+#contacto label {
+  display: block;
+  font-weight: bold;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contacto button[type="submit"] {
+  background-color: #ff8000;
+  color: #fff;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contacto button[type="submit"]:hover {
+  background-color: #e56e00;
+}
+
+/* pie de pagina*/
+
+.pie-pagina {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contenedor2 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.contenedor2 h3 {
+  color: #ff8000;
+}
+
+.pie-pagina > div {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.derechos {
+  font-size: 14px;
+  margin-top: 40px;
+}
+.redes-sociales ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-footer {
+  width: 4rem;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+}
+.logo-footer:hover {
+  transform: scale(1.25);
+}
+/* ///////s */
+
+/* Estilos generales */
+
+/* Media queries */
+
+/* Para dispositivos con un ancho máximo de 768px */
+@media only screen and (max-width: 768px) {
+  /* Estilos del encabezado */
+  .encabezado h1 {
+    font-size: 28px;
+  }
+
+  /* Estilos de la navegación */
+  .lista-menu li {
+    margin-left: 3rem;
+  }
+
+  /* Estilos de las secciones */
+  .titulo-principal {
+    font-size: 36px;
+  }
+
+  /* Estilos de los servicios */
+  .titulo-seccion {
+    font-size: 28px;
+  }
+
+  .lista-servicios {
+    justify-content: flex-start;
+  }
+
+  .servicio {
+    width: 100%;
+  }
+
+  /* Estilos de la galería */
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  /* Estilos del formulario de contacto */
+  .formulario-contacto {
+    max-width: 100%;
+  }
+
+  /* Estilos del encabezado */
+
+  .encabezado h1 {
+    font-size: 24px;
+  }
+
+  /* Estilos de la navegación */
+  .lista-menu {
+    display: none;
+  }
+  .icon-menu-hamburguesa{
+  width: 4rem;
+  cursor: pointer;
+  display: flex;
+  
+}
+.modal-menu{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-color: black;
+  opacity: 60%;
+  z-index: 1;
+  display: none;
+}
+.menu{
+  background-color: white;
+z-index: 3;
+position: fixed;
+width: 40%;
+right: 0;
+bottom: 0;
+top: 0;
+left: 10;
+display: none;
+}
+.menu1{
+  display: block;
+}
+
+  .logo-nav {
+    height: 3rem;
+    width: 4rem;
+  }
+
+  /* Estilos de las secciones */
+  .titulo-principal {
+    font-size: 32px;
+  }
+
+  /* Estilos de los servicios */
+  .titulo-seccion {
+    font-size: 24px;
+  }
+
+  /* Estilos de la galería */
+  .galeria {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Estilos del formulario de contacto */
+  .formulario-contacto {
+    max-width: 100%;
+  }
+  #ciber-seguridad article {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  #ciber-seguridad article div {
+    width: 90%;
+  }
+  footer .contenedor2 {
+    flex-flow: column;
+  }
+  .redes-sociales ul {
+    flex-direction: column;
+  }
+}
